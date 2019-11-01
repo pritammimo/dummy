@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ghost</title>
+    <style>
+    body{
+        padding:0;
+        margin:0;
+        width:100vw;
+        background-color: rgba(0,0,0,0.4);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center bottom;
+        background-attachment:fixed;
+        overflow:hidden;
+        font-family:tahoma;
+        font-weight:700;
+        color:#222;
+        text-align:center;
+        background-blend-mode:darken;
+        background-image:url(images.jpg);
+    }
+    body:before{
+        content:"";
+        height:100vh;
+        width:100vw;
+        display:block;
+        position:fixed;
+        overflow:hidden;
+        box-shadow: inset 0 0 10em rgba(0,0,0,1);
+        animation:flicker 32s linear infinite;
+    }
+    @keyframes flicker{
+        0%{
+            background:white;
+            opacity:0;
+        }
+        10%{
+            background:white;
+            opacity:0;
+        }
+        10.1%{
+            background:white;
+            opacity:1;
+        }
+        10.2%{
+            background:white;
+            opacity:0;
+        }
+        23%{
+            background:white;
+            opacity:0;
+        }
+        23.1%{
+            background:white;
+            opacity:1;
+        }
+        23.2%{
+            background:white;
+            opacity:0;
+        }
+        35%{
+            background:white;
+            opacity:0;
+        }
+        35.1%{
+            background:white;
+            opacity:1;
+        }
+        35.2%{
+            background:white;
+            opacity:0;
+        }
+        48%{
+            background:white;
+            opacity:0;
+        }
+        48.1%{
+            background:white;
+            opacity:1;
+        }
+        48.2%{
+            background:white;
+            opacity:0;
+        }
+        60%{
+            background:white;
+            opacity:0;
+        }
+        60.1%{
+            background:white;
+            opacity:1;
+        }
+        60.2%{
+            background:white;
+            opacity:0;
+        }
+        72%{
+            background:white;
+            opacity:0;
+        }
+        72.1%{
+            background:white;
+            opacity:1;
+        }
+        72.2%{
+            background:white;
+            opacity:0;
+        }
+        85%{
+            background:white;
+            opacity:0;
+        }
+        85.1%{
+            background:white;
+            opacity:1;
+        }
+        85.2%{
+            background:white;
+            opacity:0;
+        }
+        99%{
+            background:white;
+            opacity:0;
+        }
+        99.1%{
+            background:white;
+            opacity:1;
+        }
+        99.2%{
+            background:white;
+            opacity:0;
+        }
+        100%
+        {  background:white;
+            opacity:0;}
+    }
+    #twitch{
+font-size:5em;
+margin:0 auto;
+height:100vh;
+text-transform:uppercase;
+display:flex;
+align-items:center;
+justify-content:center;
+-webkit-backdrop-filter: blur(10px);
+    }
+    #twitch span{
+        display:block;
+        font-size: 0.4em;
+        opacity:0.8;
+    }
+    #twitch div{
+        position:absolute;
+        margin:2vh 0;
+        opacity:0;
+        left:10vw;
+        width:80vw;
+        animation: switch 32s linear infinite;
+    }
+#twitch div:nth-child(2){animation-delay: 4s}
+#twitch div:nth-child(3){animation-delay: 8s}
+#twitch div:nth-child(4){animation-delay: 12s}
+#twitch div:nth-child(5){animation-delay: 16s}
+#twitch div:nth-child(6){animation-delay: 20s}
+#twitch div:nth-child(7){animation-delay: 24s}
+#twitch div:nth-child(8){animation-delay: 28s}
+@keyframes switch{
+0%{opacity:0;filter:blur(3px);transform:scale(0.95);
+text-shadow:40px 42px 2px rgba(0,0,0,0.2)}
+3%{opacity:.7;filter:blur(2px);transform:scale(1);
+text-shadow:40px 42px 2px rgba(0,0,0,0.1)}
+6%{opacity:.7;filter:blur(2px);transform:scale(1);
+text-shadow:40px 42px 2px rgba(0,0,0,0.1);color:white;}
+10%{opacity:.7;filter:blur(3px);transform:scale(1.1);
+text-shadow:40px 42px 2px rgba(0, 0, 0,0.1);color:black;}
+10.1%{opacity:.8;filter:blur(2px);transform:scale(2);
+text-shadow:-40px -142px 2px rgba(0 ,0 ,0,0.1);color:white;}
+10.2%{opacity:.8;filter:blur(2px);transform:scale(2);
+text-shadow:40px 42px 2px rgba(0 ,0, 0,0.1);color:white;}
+11.1%{opacity:.8;filter:blur(2px);transform:scale(2);
+text-shadow:40px 42px 2px rgba(0, 0 ,0,0.1);color:#111;}
+11.2%{opacity:.7;filter:blur(2px);transform:scale(2);
+text-shadow:90px 52px 2px rgba(0, 0 ,0,0.1);color:#fff;}
+12%{opacity:.7;filter:blur(5px);transform:scale(1.1);
+text-shadow:90px 52px 2px rgba(0,0,0,0);color:#000;}
+12.1%{opacity:.7;filter:blur(5px);transform:scale(1.1);
+text-shadow:-90px -52px 2px rgba(0 ,0 ,0,0);color:#000;}
+13%{opacity:0;filter:blur(3px);transform:scale(1.1);
+text-shadow:40px 42px 2px rgba(0 ,0 ,0,0);color:#000;}
+}
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="twitch">
+        <div>HALLOWEEN <span>SPECIAL</span></div>
+        <div>STAY<span>AWAKE</span></div>
+        <div><span>WHEN</span>BLACK</div>
+        <div>CATS<span>PROWLS...</span></div>
+        <div>AND<span>PUMPKINS GLEAM</span></div>
+        <div><span>MAY LUCK</span>BE YOUR</div>
+        <div>ON<span>HALLOWEEN</span></div>
+        <div<span></span</div>
+    </div>
+</body>
+</html>
